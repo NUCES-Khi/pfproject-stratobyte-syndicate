@@ -1,10 +1,11 @@
+//Inclusion of Libraries
 #include <stdio.h>
 #include <string.h>
 #include <stdbool.h>
 #include <stdlib.h>
 #include <ctype.h>
 #include <windows.h>
-
+//Giving symbols a specific value for ticketing purposes
 #define SA 'A'
 #define SB 'B'
 #define SC 'C'
