@@ -21,6 +21,8 @@ The Flight Ticket Management System is a sophisticated software solution designe
 - [Data Structures](#data-structures)
   - [Character Arrays](#character-arrays)
   - [Dynamic Memory Allocation](#dynamic-memory-allocation)
+  - [Heaps](#heaps)
+  - [Stacks](#stacks)
   - [Pointers](#pointers)
   - [File Handling](#file-handling)
   - [Constants](#constants)
@@ -140,8 +142,8 @@ Dynamic memory allocation through `malloc` is employed to allocate memory for va
 
 ### Heap Usage:
 
-- **Reservation Node Allocation:**
-  - The `makeReservation` function dynamically allocates memory for a new `struct FlightReservation` node on the heap using `malloc`. This allows the creation of a new reservation node for each passenger.
+- **Reservation Memory Allocation:**
+  - The `makeReservation` function dynamically allocates memory for a new `struct FlightReservation` on the heap using `malloc`. This allows the creation of a new reservation for each passenger.
 
 - **String Allocation in Reservations:**
   - Within the `struct FlightReservation`, strings such as `passport`, `name`, `email`, and `destination` are dynamically allocated on the heap using `malloc`. This dynamic allocation ensures that each reservation's string data is stored in separate memory locations.
