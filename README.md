@@ -140,7 +140,7 @@ Dynamic memory allocation through `malloc` is employed to allocate memory for va
 
 - **Memory for New Ticket:** The changeDate function dynamically allocates memory for creating a new ticket string with modified date components.
 
-### Heap Usage:
+### Heaps
 
 - **Reservation Memory Allocation:**
   - The `makeReservation` function dynamically allocates memory for a new `struct FlightReservation` on the heap using `malloc`. This allows the creation of a new reservation for each passenger.
@@ -148,7 +148,7 @@ Dynamic memory allocation through `malloc` is employed to allocate memory for va
 - **String Allocation in Reservations:**
   - Within the `struct FlightReservation`, strings such as `passport`, `name`, `email`, and `destination` are dynamically allocated on the heap using `malloc`. This dynamic allocation ensures that each reservation's string data is stored in separate memory locations.
 
-### Stack Usage:
+### Stacks
 
 - **Local Variables:**
   - Local variables such as `choice`, `first_row`, `last_row`, `seatCounter`, `ticket`, `passportToCancel`, `day`, `month`, `year`, and others are stored on the stack. These variables are used for temporary storage during function calls and control flow.
