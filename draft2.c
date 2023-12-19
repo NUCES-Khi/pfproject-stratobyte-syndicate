@@ -1,4 +1,21 @@
+#include <stdio.h>
+#include <string.h>
+#include <stdbool.h>
+#include <stdlib.h>
+#include <ctype.h>
 
+#define SA 'A'
+#define SB 'B'
+#define SC 'C'
+#define SD 'D'
+#define SE 'E'
+#define SF 'F'
+#define WINDOW "Window"
+#define AISLE "Aisle"
+#define MIDDLE "Middle"
+#define MAX_PASSWORD_LENGTH 50
+
+//Ticket format: (YYYY)(MM)(DD)(DEP)(ARR)(ROW)(SEAT)
 
 // Function prototypes
 int checkPassword();
