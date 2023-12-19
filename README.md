@@ -138,6 +138,22 @@ Dynamic memory allocation through `malloc` is employed to allocate memory for va
 
 - **Memory for New Ticket:** The changeDate function dynamically allocates memory for creating a new ticket string with modified date components.
 
+### Heap Usage:
+
+- **Reservation Node Allocation:**
+  - The `makeReservation` function dynamically allocates memory for a new `struct FlightReservation` node on the heap using `malloc`. This allows the creation of a new reservation node for each passenger.
+
+- **String Allocation in Reservations:**
+  - Within the `struct FlightReservation`, strings such as `passport`, `name`, `email`, and `destination` are dynamically allocated on the heap using `malloc`. This dynamic allocation ensures that each reservation's string data is stored in separate memory locations.
+
+### Stack Usage:
+
+- **Local Variables:**
+  - Local variables such as `choice`, `first_row`, `last_row`, `seatCounter`, `ticket`, `passportToCancel`, `day`, `month`, `year`, and others are stored on the stack. These variables are used for temporary storage during function calls and control flow.
+
+- **Function Parameters:**
+  - Function parameters and return addresses are stored on the stack during function calls.
+
 ### Pointers
 - Pointers are used extensively for dynamic memory allocation, string manipulation, and file handling.
 
@@ -159,14 +175,11 @@ This file handling mechanism ensures that reservation information is persisted b
 
 ## Major Challenges Encountered
 
-1. **Integration of Functions:**
-   - Coordinating the compilation of various functions and aligning them with their intended applications proved to be a significant challenge.
-
-2. **Filing Process:**
+1. **Filing Process:**
    - Limited expertise in the area of filing hindered progress as we grappled with understanding and applying the concepts efficiently.
 
-3. **Code Organization and Structure:**
+2. **Code Organization and Structure:**
    - Establishing a clear and effective organization for the entire codebase presented difficulties, impacting readability and maintainability.
 
-4. **Function Diversity and Output Detail:**
+3. **Function Diversity and Output Detail:**
    - Enhancing the variety of functions to generate more comprehensive and detailed outputs emerged as a priority for achieving greater utility and effectiveness.
